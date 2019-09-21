@@ -40,18 +40,17 @@ where we notice that from starting with no hispanic population, 72 where identif
 
 In the case of Florida, a state with a considerable hispanic population, there is the label of "Hispanic" in the Race field of the inmate data. However, we can still find cases where the "White" label is applied to inmates who don't fit that category. The [Jupyter Notebook](https://github.com/danj7/analyzing_hispanic_inmate_population/blob/master/Florida%20Hispanic%20Inmate%20Population.ipynb) utilized extracts profiles of inmates whose last name fits the list of common hispanic last names. A table is created with all profiles, which contains a column for name, sex, race, and other attributes. This population is assumed to be all hispanic and the distribution of the race category for it is shown in the following table.
 
-| Race             | Count |
-| ----------------:|------:|
-| Asian            | xyz   |
-| Black            | xyz   |
-| Pacific Islander | xyz   |
-| White            | xyz   |
-| Hispanic         | xyz   |
-
-The Annual Report of the Florida Department of Corrections (found [here](http://www.dc.state.fl.us/pub/annual/1718/FDC_AR2017-18.pdf)) states that the hispanic inmate population should be about 12%, however, if we add those we've found in this analysis, it would be xyz%.
+| Race                               | Count |
+| ----------------------------------:|------:|
+| All others/Unknown                 | 87    |
+| American Indian or Pacific Islander| 6     |
+| Black                              | 1508  |
+| Hispanic                           | 3896  |
+| White                              | 7321  |
 
 
-________________
+This gives a sum of 12,818 possible hispanics in total. The Annual Report of the Florida Department of Corrections (found [here](http://www.dc.state.fl.us/pub/annual/1718/FDC_AR2017-18.pdf)) states that the hispanic inmate population should be about 12%, which comes out to be 11,980 people. The difference between these two numbers is not that great, which seems to indicate that hispanic inmates are being counted even though they are assigned a different race category in the public database.
 
-## To Do:
-* Finish extracting data and replace xyz placeholders.
+## Pseudo-conclusion
+
+This analysis is very rough and unscientific. It's meant as a possible exercise in webscraping with Python and as a possible project that someone could expand on. This should not be taken to be a thorough study of either of these criminal justice systems, nor can any actual motive be assigned to the labels presented in these public databases. Note that I am not including the actual databases with names and information about inmates even though is open to the public: I just didn't feel comfortable doing that.
