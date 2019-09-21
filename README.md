@@ -21,7 +21,7 @@ The comparison is done by comparing the last names of the inmates with a list of
 
 ### Polk County
 
-First, the data from Polk County is analyzed in this [Jupyter Notebook](link_to_notebook...). The counts of races of the inmates are shown in the following table:
+First, the data from Polk County is analyzed in this [Jupyter Notebook](https://github.com/danj7/analyzing_hispanic_inmate_population/blob/master/Polk%20County%20Current%20Inmates.ipynb). The counts of races of the inmates are shown in the following table:
 
 | Race             | Original | Reviewed |
 | ----------------:|---------:| --------:|
@@ -38,4 +38,20 @@ where we notice that from starting with no hispanic population, 72 where identif
 
 ### Florida
 
-_soon to be finished..._
+In the case of Florida, a state with a considerable hispanic population, there is the label of "Hispanic" in the Race field of the inmate data. However, we can still find cases where the "White" label is applied to inmates who don't fit that category. The [Jupyter Notebook](https://github.com/danj7/analyzing_hispanic_inmate_population/blob/master/Florida%20Hispanic%20Inmate%20Population.ipynb) utilized extracts profiles of inmates whose last name fits the list of common hispanic last names. A table is created with all profiles, which contains a column for name, sex, race, and other attributes. This population is assumed to be all hispanic and the distribution of the race category for it is shown in the following table.
+
+| Race             | Count |
+| ----------------:|------:|
+| Asian            | xyz   |
+| Black            | xyz   |
+| Pacific Islander | xyz   |
+| White            | xyz   |
+| Hispanic         | xyz   |
+
+The Annual Report of the Florida Department of Corrections (found [here](http://www.dc.state.fl.us/pub/annual/1718/FDC_AR2017-18.pdf)) states that the hispanic inmate population should be about 12%, however, if we add those we've found in this analysis, it would be xyz%.
+
+
+________________
+
+## To Do:
+* Finish extracting data and replace xyz placeholders.
